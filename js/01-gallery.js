@@ -12,7 +12,7 @@ const itemToHtml = galleryItems.map(({ preview, original, description }) => `<li
     />
   </a>
 </li>` );
-galleryEl.insertAdjacentHTML("afterbegin", itemToHtml.join());
+galleryEl.insertAdjacentHTML("afterbegin", itemToHtml.join(""));
 
 galleryEl.addEventListener('click', onClick);
 
